@@ -1,0 +1,57 @@
+" Install pathgen:
+
+"    mkdir -p ~/.vim/autoload ~/.vim/bundle
+"    curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+" And vundler:
+"
+"    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+"
+" Run vim and run `BundleInstall`
+
+" Pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
+" Vundler
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+filetype plugin indent on
+
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-rails'
+Bundle 'gmarik/snipmate.vim'
+
+color desert " Color configuration
+
+set encoding=utf8 " Use utf-8 as default encoding
+
+syntax on
+set number
+let mapleader = ","
+
+set wrap " Line wrapping on
+set expandtab " Use spaces instead tabs
+
+" Change tab
+map <C-O> :tabprevious<cr>
+map <C-P> :tabnext<cr>
+
+" Show invisibles
+" http://vimcasts.org/episodes/show-invisibles/
+set list
+set listchars=tab:\|\ ,trail:·,eol:¬
+
+" Disable arrow keys
+" http://www.messaliberty.com/2009/01/how-to-disable-the-arrow-keys-in-vi-or-vim/
+" Tip: use control+p or control+n when command mode
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
