@@ -1,8 +1,10 @@
 # Features
 
+* Simple;
 * 2 spaces;
 * Markdown;
-* Use Pathogen and Vundler;
+* "Restore cursor to file position in previous editing session";
+* "Disable arrow keys";
 
 # Plugins
 
