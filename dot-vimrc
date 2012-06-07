@@ -24,7 +24,6 @@ set encoding=utf8 " Use utf-8 as default encoding
 syntax on
 set number
 let mapleader = ","
-
 set wrap " Line wrapping on
 set expandtab " Use spaces instead tabs
 set noswapfile " Dont create *.swp* files. Useful to use with dropbox
