@@ -55,7 +55,7 @@ set laststatus=2
 
 " Customize status line
 " `:help statusline`
-set statusline=%<%f\ \[%{&ff}\]\ %y\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ \[%{&ff}\]\ %y\ %h%m%r%=%-14.(%l/%L,%c%V%)\ %P
 
 " From: http://vim.wikia.com/wiki/Restore_cursor_to_file_position_in_previous_editing_session
 " Tell vim to remember certain things when we exit
