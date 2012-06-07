@@ -27,6 +27,7 @@ let mapleader = ","
 set wrap " Line wrapping on
 set expandtab " Use spaces instead tabs
 set noswapfile " Dont create *.swp* files. Useful to use with dropbox
+setlocal incsearch " Set search *dinamic*
 
 " Change tab
 map <C-O> :tabprevious<cr>
