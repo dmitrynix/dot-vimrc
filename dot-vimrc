@@ -25,7 +25,7 @@ syntax on
 set number
 let mapleader = ","
 set wrap " Line wrapping on
-set expandtab " Use spaces instead tabs
+set ts=2 sts=2 sw=2 expandtab " Use spaces instead tabs. From: http://vimcasts.org/episodes/tabs-and-spaces/
 set noswapfile " Dont create *.swp* files. Useful to use with dropbox
 setlocal incsearch " Set search *dinamic*
 
