@@ -10,6 +10,7 @@ call vundle#rc()
 
 filetype plugin indent on
 
+" My plugins to install/update with vundler
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-rails'
