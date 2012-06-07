@@ -21,7 +21,6 @@ Bundle 'dmitrynix/snipmate-snippets'
 color desert " Color configuration
 
 set encoding=utf8 " Use utf-8 as default encoding
-
 syntax on
 set number
 let mapleader = ","
