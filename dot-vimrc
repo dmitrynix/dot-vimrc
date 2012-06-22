@@ -10,7 +10,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-rails'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'tpope/vim-markdown'
-Bundle 'dmitrynix/snipmate-snippets'
 
 color desert " Color configuration
 
