@@ -21,7 +21,24 @@
 * [http://github.com/gmarik/snipmate.vim](http://github.com/gmarik/snipmate.vim);
 * [http://github.com/tpope/vim-markdown](http://github.com/tpope/vim-markdown);
 
+# Install
+
+Download `.vimrc`:
+
+    wget https://github.com/dmitrynix/dot-vimrc/raw/master/dot-vimrc -O .vimrc
+
+Clone vundle:
+
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+Run with `BundleInstall`:
+
+    vim +BundleInstall +qall
+
+And clone you favorite snippet:
+
+    git clone git://github.com/dmitrynix/snipmate-snippets.git ~/.vim/snippets
+
 # TODO
 
-* Install;
 * Customize or Fork;
