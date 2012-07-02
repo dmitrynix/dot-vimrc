@@ -23,8 +23,8 @@ set noswapfile " Dont create *.swp* files. Useful to use with dropbox
 setlocal incsearch " Set search *dinamic*
 
 " Change tab
-map <C-O> :tabprevious<cr>
-map <C-P> :tabnext<cr>
+map T :tabprevious<cr>
+map t :tabnext<cr>
 
 " Show invisibles
 " http://vimcasts.org/episodes/show-invisibles/
