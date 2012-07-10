@@ -10,6 +10,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-rails'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'tpope/vim-markdown'
+Bundle 'kien/ctrlp.vim'
 
 color desert " Color configuration
 
@@ -43,6 +44,13 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
+
+map <leader>rv :CtrlP app/views<cr>
+map <leader>rm :CtrlP app/models<cr>
+map <leader>sm :CtrlP spec/models<cr>
+map <leader>rc :CtrlP app/controllers<cr>
+map <leader>sc :CtrlP spec/controllers<cr>
+map <leader>sr :CtrlP spec/requests<cr>
 
 " Status line
 set laststatus=2
