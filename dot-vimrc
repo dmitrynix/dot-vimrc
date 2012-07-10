@@ -1,8 +1,9 @@
+filetype plugin indent on
+set encoding=utf8 " Use utf-8 as default encoding
+
 " Vundler
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
-filetype plugin indent on
 
 " My plugins to install/update with vundler
 Bundle 'gmarik/vundle'
@@ -11,52 +12,31 @@ Bundle 'tpope/vim-rails'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 'kien/ctrlp.vim'
+let mapleader = ","
 
 color desert " Color configuration
 
-set encoding=utf8 " Use utf-8 as default encoding
 syntax on
+
 set number
-let mapleader = ","
+
 set wrap " Line wrapping on
 set ts=2 sts=2 sw=2 expandtab " Use spaces instead tabs. From: http://vimcasts.org/episodes/tabs-and-spaces/
+
 set noswapfile " Dont create *.swp* files. Useful to use with dropbox
 set nobackup " Dont create ~ files.
-setlocal incsearch " Set search *dinamic*
 
-" Change tab
-map T :tabprevious<cr>
-map t :tabnext<cr>
+setlocal incsearch " Set search *dinamic*
 
 " Show invisibles
 " http://vimcasts.org/episodes/show-invisibles/
 set list
 set listchars=tab:\|\ ,trail:·,eol:¬
 
-" Disable arrow keys
-" http://www.messaliberty.com/2009/01/how-to-disable-the-arrow-keys-in-vi-or-vim/
-" Tip: use control+p or control+n when command mode
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
-
-map <leader>rv :CtrlP app/views<cr>
-map <leader>rm :CtrlP app/models<cr>
-map <leader>sm :CtrlP spec/models<cr>
-map <leader>rc :CtrlP app/controllers<cr>
-map <leader>sc :CtrlP spec/controllers<cr>
-map <leader>sr :CtrlP spec/requests<cr>
-
 " Status line
-set laststatus=2
-
 " Customize status line
 " `:help statusline`
+set laststatus=2 " Always show statusline
 set statusline=%<%f\ \[%{&ff}\]\ %y\ %h%m%r%=%-14.(%l/%L,%c%V%)\ %P
 
 " From: http://vim.wikia.com/wiki/Restore_cursor_to_file_position_in_previous_editing_session
@@ -79,3 +59,26 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
+
+" Change tab
+map T :tabprevious<cr>
+map t :tabnext<cr>
+
+" Disable arrow keys
+" http://www.messaliberty.com/2009/01/how-to-disable-the-arrow-keys-in-vi-or-vim/
+" Tip: use control+p or control+n when command mode
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
+map <leader>rv :CtrlP app/views<cr>
+map <leader>rm :CtrlP app/models<cr>
+map <leader>sm :CtrlP spec/models<cr>
+map <leader>rc :CtrlP app/controllers<cr>
+map <leader>sc :CtrlP spec/controllers<cr>
+map <leader>sr :CtrlP spec/requests<cr>
