@@ -11,11 +11,13 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-rails'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'tpope/vim-markdown'
+Bundle 'altercation/vim-colors-solarized'
 let mapleader = ","
 
-color desert " Color configuration
-
-syntax on
+let g:solarized_termtrans = 1
+syntax enable
+set background=light
+colorscheme solarized
 
 set number
 
