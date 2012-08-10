@@ -31,7 +31,7 @@ set noswapfile " Dont create *.swp* files. Useful to use with dropbox.
 set nobackup " Dont create ~ files.
 set nocursorline " Dont underline all line.
 setlocal incsearch " Set search *dinamic*
-set nohlsearch " No highlight searchs
+set hlsearch " No highlight searchs
 
 " Show invisibles
 " http://vimcasts.org/episodes/show-invisibles/
@@ -80,3 +80,5 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
+
+map <leader>/ :set hlsearch!<cr> " Toggle hlsearch :)
