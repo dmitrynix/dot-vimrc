@@ -12,6 +12,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'gmarik/snipmate.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 'altercation/vim-colors-solarized'
+
 let mapleader = ","
 
 let g:solarized_termtrans = 1
