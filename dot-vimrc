@@ -26,6 +26,7 @@ set wrap " Line wrapping on
 set ts=2 sts=2 sw=2 expandtab " Use spaces instead tabs. From: http://vimcasts.org/episodes/tabs-and-spaces/
 
 " Disable defaults
+set mouse-=a " Disable mouse integration :|, from: http://www.varesano.net/blog/fabio/disable%20vim%20automatic%20visual%20mode%20using%20mouse
 set noswapfile " Dont create *.swp* files. Useful to use with dropbox.
 set nobackup " Dont create ~ files.
 set nocursorline " Dont underline all line.
