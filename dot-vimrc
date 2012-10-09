@@ -65,10 +65,6 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 
-" Change tab
-map T :tabprevious<cr>
-map t :tabnext<cr>
-
 " Disable arrow keys
 " http://www.messaliberty.com/2009/01/how-to-disable-the-arrow-keys-in-vi-or-vim/
 " Tip: use control+p or control+n when command mode
