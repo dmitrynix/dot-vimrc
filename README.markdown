@@ -40,6 +40,11 @@ And clone you favorite snippet:
 
     git clone git://github.com/dmitrynix/snipmate-snippets.git ~/.vim/snippets
 
+# Others vimfiles:
+
+* [https://github.com/samflores/dotfiles](https://github.com/samflores/dotfiles);
+* [https://github.com/weldyss/dotfiles](https://github.com/weldyss/dotfiles);
+
 # TODO
 
 * Customize or Fork;
