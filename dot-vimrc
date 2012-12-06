@@ -43,7 +43,7 @@ set listchars=tab:\|\ ,trail:·,eol:¬
 " Customize status line
 " `:help statusline`
 set laststatus=2 " Always show statusline
-set statusline=%<%f\ \[%{&ff}\]\ %y\ %h%m%r%=%-14.(%l/%L,%c%V%)\ %P
+set statusline=%<%f\ \[%{&ff}\]\ %y\ %h%m%r%=%-14.(%c%V%)\ %l/%L[%P]
 
 " From: http://vim.wikia.com/wiki/Restore_cursor_to_file_position_in_previous_editing_session
 " Tell vim to remember certain things when we exit
