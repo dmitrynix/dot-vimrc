@@ -7,11 +7,11 @@
 
 # Features
 
-* Simple;
-* 2 spaces;
-* Markdown;
-* "Restore cursor to file position in previous editing session";
-* "Disable arrow keys";
+* simple;
+* use 2 spaces;
+* markdown;
+* restore cursor to file position in previous editing session;
+* disable arrow keys;
 
 # Plugins
 
