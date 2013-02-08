@@ -67,16 +67,11 @@ augroup resCur
 augroup END
 
 " Disable arrow keys
-" http://www.messaliberty.com/2009/01/how-to-disable-the-arrow-keys-in-vi-or-vim/
-" Tip: use control+p or control+n when command mode
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
+" http://vimcasts.org/blog/2013/02/habit-breaking-habit-making/
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 map <leader>/ :set hlsearch!<cr> " Toggle hlsearch :)
 
