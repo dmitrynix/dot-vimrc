@@ -16,6 +16,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'jnwhiteh/vim-golang'
 
 au BufNewFile,BufRead *.go set filetype=go
+au BufNewFile,BufRead *.go set noexpandtab
 
 let mapleader = ","
 
